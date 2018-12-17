@@ -12,14 +12,13 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-FROM docker:18.03.0
-MAINTAINER "Sebastian Trebitz <sebastian@nephosolutions.com>"
+ARG DOCKER_VERSION
+
+FROM docker:${DOCKER_VERSION}-git
+LABEL maintainer="sebastian@nephosolutions.com"
+
 
 RUN apk add --no-cache --update \
   bash \
   ca-certificates \
-  git \
   make
-
-CMD "/bin/bash"
-
