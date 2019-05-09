@@ -15,7 +15,7 @@
 DOCKER_IMAGE_OWNER	:= nephosolutions
 DOCKER_IMAGE_NAME		:= docker
 
-DOCKER_VERSION := 18.09.1
+DOCKER_VERSION := 18.09.2
 
 CACHE_DIR 		:= .cache
 
