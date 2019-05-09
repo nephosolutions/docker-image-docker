@@ -13,11 +13,11 @@
 #   limitations under the License.
 
 DOCKER_IMAGE_OWNER	:= nephosolutions
-DOCKER_IMAGE_NAME		:= docker
+DOCKER_IMAGE_NAME	:= docker
 
-DOCKER_VERSION := 18.09.2
+DOCKER_VERSION	:= 18.09.2
 
-CACHE_DIR 		:= .cache
+CACHE_DIR	:= .cache
 
 remove = $(if $(strip $1),rm -rf $(strip $1))
 
